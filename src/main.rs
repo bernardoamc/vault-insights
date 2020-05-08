@@ -27,7 +27,7 @@ struct Opt {
     #[structopt(short, long, raw(use_delimiter = "true"))]
     projects: Vec<u32>,
 
-    /// Fetch projects updated dince this amount of days
+    /// Fetch projects updated since the amount of days specified
     #[structopt(short, long, default_value="14")]
     since_days_ago: i64,
 }
